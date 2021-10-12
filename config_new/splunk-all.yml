@@ -1,0 +1,27 @@
+logsources:
+  zscaler:
+    category: proxy
+    conditions:
+      index: 'zscaler'
+      sourcetype: 'zscalernss-web'
+  firewall:
+      category: firewall
+      conditions:
+        index: 'firewall'
+fieldmappings:
+    c-uri: url
+    c-ip: src
+    c-useragent: useragent
+    r-dns: hostname
+    ClientIP: src
+    cs-method: http_method
+    c-uri-extension: url
+    cs-host: hostname
+    c-uri-query: url
+    c-uri-stem: url
+    sc-bytes: bytes
+    c-ua: useragent
+    cs-uri: url
+    dst_port: dest_port
+    message_size: bytes
+    src_ip: src
