@@ -5,9 +5,9 @@ logsources:
       index: 'zscaler'
       sourcetype: 'zscalernss-web'
   firewall:
-      category: firewall
-      conditions:
-        index: 'firewall'
+    category: firewall
+    conditions:
+      index: 'firewall'
 fieldmappings:
     c-uri: url
     c-ip: src
@@ -22,6 +22,5 @@ fieldmappings:
     sc-bytes: bytes
     c-ua: useragent
     cs-uri: url
-    dst_port: dest_port
-    message_size: bytes
     src_ip: src
+    dst_ip: dest
